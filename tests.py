@@ -1,6 +1,7 @@
 import unittest
 import task
 import math
+from datetime import date
 
 
 class TestCase(unittest.TestCase):
@@ -52,6 +53,16 @@ class TestCase(unittest.TestCase):
 
         self.assertEqual(expected_first_2, result_2[0])
         self.assertEqual(expected_last_2, result_2[1])
+
+    def test_difference_dates(self):
+        expected_0 = 0
+        self.assertEqual(expected_0, task.difference_dates(date(2020, 2, 29), date(2020, 2, 29)))
+
+        expected_1 = 1
+        self.assertEqual(expected_1, task.difference_dates(date(2020, 2, 28), date(2020, 2, 29)))
+
+        expected_2 = 9422
+        self.assertEqual(expected_2, task.difference_dates(date(1994, 5, 14), date(2020, 2, 29)))
 
 
 if __name__ == '__main__':
