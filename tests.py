@@ -1,6 +1,7 @@
 import unittest
 import task
 
+
 class TestCase(unittest.TestCases):
     def test1(self):
         expected = "success"
@@ -9,6 +10,7 @@ class TestCase(unittest.TestCases):
     def test2(self):
         expected = "failure"
         self.assertNotEqual(expected, task.firstrun())
+
 
 if __name__ == '__main__':
     unittest.main()
