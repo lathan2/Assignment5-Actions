@@ -37,7 +37,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected_first_0, result_0[0])
         self.assertEqual(expected_last_0, result_0[1])
 
-        expected_first_1 = "zero" 
+        expected_first_1 = "zero"
         expected_last_1 = "five"
 
         result_1 = task.first_last(["zero", "one", "two", "three", "four", "five"])
