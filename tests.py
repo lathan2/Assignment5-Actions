@@ -28,6 +28,30 @@ class TestCase(unittest.TestCase):
         expected_4 = -1
         self.assertEqual(expected_4, task.circle_area(-5))
 
+    def test_first_last(self):
+        expected_first_0 = 0
+        expected_last_0 = 5
+
+        result_0 = task.first_last([0, 1, 2, 3, 4, 5])
+
+        self.assertEqual(expected_first_0, result_0[0])
+        self.assertEqual(expected_last_0, result_0[1])
+
+        expected_first_1 = "zero" 
+        expected_last_1 = "five"
+
+        result_1 = task.first_last(["zero", "one", "two", "three", "four", "five"])
+
+        self.assertEqual(expected_first_1, result_1[0])
+        self.assertEqual(expected_last_1, result_1[1])
+
+        expected_first_2 = 10.0
+        expected_last_2 = 15.0
+
+        result_2 = task.first_last([10.0, 11.0, 12.0, 13.0, 14.0, 15.0])
+
+        self.assertEqual(expected_first_2, result_2[0])
+        self.assertEqual(expected_last_2, result_2[1])
 
 if __name__ == '__main__':
     unittest.main()

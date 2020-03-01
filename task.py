@@ -12,3 +12,7 @@ def circle_area(radius):
 
     else:
         return math.pi * math.pow(radius, 2)
+
+
+def first_last(arr):
+    return arr[0], arr[-1]
