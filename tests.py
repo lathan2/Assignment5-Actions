@@ -65,7 +65,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected_2, task.difference_dates(date(1994, 5, 14), date(2020, 2, 29)))
 
         expected_3 = -737483
-        self.assertEquals(expected_3, task.difference_dates(date(2020, 2, 29), date(1,1,1)))
+        self.assertEquals(expected_3, task.difference_dates(date(2020, 2, 29), date(1, 1, 1)))
 
 
 if __name__ == '__main__':
